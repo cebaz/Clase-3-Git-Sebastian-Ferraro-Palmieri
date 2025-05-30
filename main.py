@@ -6,9 +6,9 @@ from opcion_3 import *
 
 # Inicialización de vectores y matriz
 clientes = [
-    "Lunatico_pixel", "Sombra_cristal", "Ecoerrante", "Navefantasma", "Bytesdelabahia",
-    "Tintaenelviento", "Relojoxidado", "Miradacodificada", "Circuitoazul", "Fuego_niebla",
-    "Teclaerrante", "Nebulosa_urbana", "Sueño_binario", "Saltofantasma", "Claveoculta"
+    "lunatico_pixel", "sombra_cristal", "ecoerrante", "navefantasma", "bytesdelabahia",
+    "tintaenelviento", "relojoxidado", "miradacodificada", "circuitoazul", "fuego_niebla",
+    "teclaerrante", "nebulosa_urbana", "sueño_binario", "saltofantasma", "slaveoculta"
 ]
 
 acciones = ["APPLE", "TESLA", "NVIDIA"]
@@ -25,7 +25,7 @@ while opcion != "4":
     print("2. Visualizar todos los datos")
     print("3. Consultas")
     print("4. Salir")
-    opcion = input("Ingrese una opción (1-4): ")         ###validacion###
+    opcion = input("Ingrese una opción (1-4): ")
     
     match opcion:
         case "1":

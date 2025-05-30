@@ -7,6 +7,7 @@ def registrar_transaccion(inversiones, clientes, acciones, acciones_valores):
     while usuario_encontrado == -1:
         os.system('cls')
         usuario_input = input("Ingrese nombre del usuario: ")
+        usuario_input=validar_mayusculas(usuario_input)
         for i in range(len(clientes)):
             if clientes[i] == usuario_input:
                 usuario_encontrado = i
@@ -21,6 +22,7 @@ def registrar_transaccion(inversiones, clientes, acciones, acciones_valores):
     while empresa_encontrada == -1:
         os.system('cls')
         empresa_input = input("Ingrese nombre de la empresa\nAPPLE: $10.41\nTESLA: $7.71\nNVIDIA: $8.50\n\n")
+        empresa_input=validar_mayusculas(empresa_input)
         for j in range(len(acciones)):
             if acciones[j] == empresa_input:
                 empresa_encontrada = j
